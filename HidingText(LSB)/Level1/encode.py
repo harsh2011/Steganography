@@ -12,8 +12,8 @@ def timetoencode(image,message,filename):
 
     if(len(image)>len(hidingarray) and len(image[0])>len(hidingarray[0])):
 
-        y = random.randrange(3, len(image) - len(hidingarray))
-        x = random.randrange(3,len(image[0])-len(hidingarray[0]))
+        y = random.randrange(0, len(image) - len(hidingarray))
+        x = random.randrange(0,len(image[0])-len(hidingarray[0]))
 
         # print(y)
         # print(x)
