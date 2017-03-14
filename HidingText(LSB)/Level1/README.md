@@ -33,5 +33,32 @@ STEP 3:
 convert 1d array in 2d 
 
     [[1,0,1,3],[1,0,2,0],[1,0,1,0],[1,0,1,1]] -> [[[1,0,1,3],[1,0,2,0]],
+                                                  [[1,0,1,0],[1,0,1,1]]]
 
 STEP 4:
+
+select position to hide the 2d array store it in key
+
+    key = [y position,x postion,heigth,width]
+    
+STEP 5:
+
+Hidding part
+
+Converting 2 LSB bits to ZERO
+
+Then OR those bits with hidding data bits to hide bits 
+
+    Hidding data => [1,0,1,3] 
+    Pixel to hide => [12,54,14,255] (RGBA)
+    
+    now,
+    (12 & (~3)) | 1 = 13
+    (54 & (~3)) | 1 = 52
+    (14 & (~3)) | 1 = 13 
+    (255 & (~3)) | 3 = 255
+    
+    //before hiding
+    [12,54,14,255]
+    //after hiding
+    [13,52,13,255]
