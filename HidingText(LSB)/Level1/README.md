@@ -2,10 +2,10 @@ This is the first code I have wrote to HIDE data in IMAGE.
 
 This is the LEVEL1
 
--> It hide the data in LSD bits
--> Image pixel must have 4 value(R,G,B,A)
--> File of image must be PNG (Because PNG is the losseless compression)(while, on other side JPEG doesn't work because it change the image by 10% but human eye can't deteted it)
--> Using 8 bits ascii value of character
+1.It hide the data in LSD bits
+2.Image pixel must have 4 value(R,G,B
+3.File of image must be PNG (Because PNG is the losseless compression)(while, on other side JPEG doesn't work because it change the image by 10% but human eye can't deteted it)mwqkpded
+4.Using 8 bits ascii value of character
 
 STEPS 1:
 Read PNG image to hide data inside that image (img)
@@ -23,6 +23,4 @@ convert disintegrate each ascii in 4 value
 STEP 3:
 convert 1d array in 2d 
     [[1,0,1,3],[1,0,2,0],[1,0,1,0],[1,0,1,1]] -> [[[1,0,1,3],[1,0,2,0]],
-                                                  [[1,0,1,0],[1,0,1,1]]]
-                                                  
 STEP 4:
