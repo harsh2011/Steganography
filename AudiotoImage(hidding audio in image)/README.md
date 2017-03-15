@@ -27,7 +27,7 @@ One of the given data
 	datafront = first8bitsof(data) // 8bits
 	datalast = last8bitsof(data) // 8bits
 	
-then,for the two channel in the data of 16 bits convert in 4 channel of 8 bits.which easy represent the image pixel value between 0 to 255
+then,for the 2 channel in the data of 16 bits convert in 4 channel of 8 bits.which easy represent the image pixel value between 0 to 255
 
 Using open write the data in image form. But image file must be PNG(lossless compression).
 
