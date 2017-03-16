@@ -31,6 +31,9 @@ then,for the 2 channel in the data of 16 bits convert in 4 channel of 8 bits.whi
 
 Using open write the data in image form. But image file must be PNG(lossless compression).
 
+Here is an ENCODE IMAGE:-
+
+![Screenshot](image.png)
 
 	
 
